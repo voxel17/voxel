@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		580B71E22FA3A8D8007CC751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580B71E12FA3A8D8007CC751 /* Assets.xcassets */; };
+		580B71E62FA3A8D8007CC751 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580B71E52FA3A8D8007CC751 /* Preview Assets.xcassets */; };
+		580B71F02FA3A8D9007CC751 /* ReiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B71EF2FA3A8D9007CC751 /* ReiTests.swift */; };
+		580B71FA2FA3A8D9007CC751 /* ReiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B71F92FA3A8D9007CC751 /* ReiUITests.swift */; };
+		580B71FC2FA3A8D9007CC751 /* ReiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B71FB2FA3A8D9007CC751 /* ReiUITestsLaunchTests.swift */; };
+		580B72192FA3D324007CC751 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 580B72182FA3D324007CC751 /* Shaders.metal */; };
+		589466F52FA51BE10026D743 /* PerlinNoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589466F42FA51BE10026D743 /* PerlinNoise.swift */; };
+		58C7EFEE2FA7D1EF00FC046D /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFD92FA7D1EF00FC046D /* Camera.swift */; };
+		58C7EFEF2FA7D1EF00FC046D /* SVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFDA2FA7D1EF00FC046D /* SVO.swift */; };
+		58C7EFF02FA7D1EF00FC046D /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFDB2FA7D1EF00FC046D /* Vector3.swift */; };
+		58C7EFF12FA7D1EF00FC046D /* Voxel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFDC2FA7D1EF00FC046D /* Voxel.swift */; };
+		58C7EFF22FA7D1EF00FC046D /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFDE2FA7D1EF00FC046D /* CameraController.swift */; };
+		58C7EFF32FA7D1EF00FC046D /* TerrainGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFDF2FA7D1EF00FC046D /* TerrainGenerator.swift */; };
+		58C7EFF42FA7D1EF00FC046D /* VoxelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFE02FA7D1EF00FC046D /* VoxelScene.swift */; };
+		58C7EFF52FA7D1EF00FC046D /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFE32FA7D1EF00FC046D /* InputHandler.swift */; };
+		58C7EFF62FA7D1EF00FC046D /* RenderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFE42FA7D1EF00FC046D /* RenderProtocols.swift */; };
+		58C7EFF72FA7D1EF00FC046D /* MetalRendererCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFE62FA7D1EF00FC046D /* MetalRendererCore.swift */; };
+		58C7EFF82FA7D1EF00FC046D /* CustomMTKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFE82FA7D1EF00FC046D /* CustomMTKView.swift */; };
+		58C7EFF92FA7D1EF00FC046D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFE92FA7D1EF00FC046D /* MainView.swift */; };
+		58C7EFFA2FA7D1EF00FC046D /* ReiAppRefactored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFEA2FA7D1EF00FC046D /* ReiAppRefactored.swift */; };
+		58C7EFFB2FA7D1EF00FC046D /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFEC2FA7D1EF00FC046D /* SceneController.swift */; };
+		58C7EFFD2FA7D56C00FC046D /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7EFFC2FA7D56C00FC046D /* MatrixHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		580B71EC2FA3A8D9007CC751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580B71D22FA3A8D6007CC751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580B71D92FA3A8D6007CC751;
+			remoteInfo = Rei;
+		};
+		580B71F62FA3A8D9007CC751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580B71D22FA3A8D6007CC751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580B71D92FA3A8D6007CC751;
+			remoteInfo = Rei;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		580B71DA2FA3A8D6007CC751 /* Rei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B71E12FA3A8D8007CC751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		580B71E32FA3A8D8007CC751 /* Rei.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rei.entitlements; sourceTree = "<group>"; };
+		580B71E52FA3A8D8007CC751 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		580B71EB2FA3A8D9007CC751 /* ReiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B71EF2FA3A8D9007CC751 /* ReiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiTests.swift; sourceTree = "<group>"; };
+		580B71F52FA3A8D9007CC751 /* ReiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B71F92FA3A8D9007CC751 /* ReiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiUITests.swift; sourceTree = "<group>"; };
+		580B71FB2FA3A8D9007CC751 /* ReiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		580B72182FA3D324007CC751 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		589466F42FA51BE10026D743 /* PerlinNoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinNoise.swift; sourceTree = "<group>"; };
+		58C7EFD92FA7D1EF00FC046D /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		58C7EFDA2FA7D1EF00FC046D /* SVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVO.swift; sourceTree = "<group>"; };
+		58C7EFDB2FA7D1EF00FC046D /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		58C7EFDC2FA7D1EF00FC046D /* Voxel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voxel.swift; sourceTree = "<group>"; };
+		58C7EFDE2FA7D1EF00FC046D /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		58C7EFDF2FA7D1EF00FC046D /* TerrainGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerrainGenerator.swift; sourceTree = "<group>"; };
+		58C7EFE02FA7D1EF00FC046D /* VoxelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoxelScene.swift; sourceTree = "<group>"; };
+		58C7EFE32FA7D1EF00FC046D /* InputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHandler.swift; sourceTree = "<group>"; };
+		58C7EFE42FA7D1EF00FC046D /* RenderProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderProtocols.swift; sourceTree = "<group>"; };
+		58C7EFE62FA7D1EF00FC046D /* MetalRendererCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalRendererCore.swift; sourceTree = "<group>"; };
+		58C7EFE82FA7D1EF00FC046D /* CustomMTKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMTKView.swift; sourceTree = "<group>"; };
+		58C7EFE92FA7D1EF00FC046D /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		58C7EFEA2FA7D1EF00FC046D /* ReiAppRefactored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReiAppRefactored.swift; sourceTree = "<group>"; };
+		58C7EFEC2FA7D1EF00FC046D /* SceneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
+		58C7EFFC2FA7D56C00FC046D /* MatrixHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		580B71D72FA3A8D6007CC751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B71E82FA3A8D9007CC751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B71F22FA3A8D9007CC751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580B71D12FA3A8D6007CC751 = {
+			isa = PBXGroup;
+			children = (
+				58C7EFE22FA7D1EF00FC046D /* Domain */,
+				58C7EFE52FA7D1EF00FC046D /* Platform */,
+				58C7EFED2FA7D1EF00FC046D /* Presentation */,
+				580B71DC2FA3A8D6007CC751 /* Rei */,
+				580B71EE2FA3A8D9007CC751 /* ReiTests */,
+				580B71F82FA3A8D9007CC751 /* ReiUITests */,
+				580B71DB2FA3A8D6007CC751 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		580B71DB2FA3A8D6007CC751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				580B71DA2FA3A8D6007CC751 /* Rei.app */,
+				580B71EB2FA3A8D9007CC751 /* ReiTests.xctest */,
+				580B71F52FA3A8D9007CC751 /* ReiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		580B71DC2FA3A8D6007CC751 /* Rei */ = {
+			isa = PBXGroup;
+			children = (
+				580B71E12FA3A8D8007CC751 /* Assets.xcassets */,
+				580B71E32FA3A8D8007CC751 /* Rei.entitlements */,
+				580B71E42FA3A8D8007CC751 /* Preview Content */,
+				580B72182FA3D324007CC751 /* Shaders.metal */,
+				589466F42FA51BE10026D743 /* PerlinNoise.swift */,
+			);
+			path = Rei;
+			sourceTree = "<group>";
+		};
+		580B71E42FA3A8D8007CC751 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				580B71E52FA3A8D8007CC751 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		580B71EE2FA3A8D9007CC751 /* ReiTests */ = {
+			isa = PBXGroup;
+			children = (
+				580B71EF2FA3A8D9007CC751 /* ReiTests.swift */,
+			);
+			path = ReiTests;
+			sourceTree = "<group>";
+		};
+		580B71F82FA3A8D9007CC751 /* ReiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				580B71F92FA3A8D9007CC751 /* ReiUITests.swift */,
+				580B71FB2FA3A8D9007CC751 /* ReiUITestsLaunchTests.swift */,
+			);
+			path = ReiUITests;
+			sourceTree = "<group>";
+		};
+		58C7EFDD2FA7D1EF00FC046D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFD92FA7D1EF00FC046D /* Camera.swift */,
+				58C7EFDA2FA7D1EF00FC046D /* SVO.swift */,
+				58C7EFDB2FA7D1EF00FC046D /* Vector3.swift */,
+				58C7EFDC2FA7D1EF00FC046D /* Voxel.swift */,
+				58C7EFFC2FA7D56C00FC046D /* MatrixHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58C7EFE12FA7D1EF00FC046D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFDE2FA7D1EF00FC046D /* CameraController.swift */,
+				58C7EFDF2FA7D1EF00FC046D /* TerrainGenerator.swift */,
+				58C7EFE02FA7D1EF00FC046D /* VoxelScene.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		58C7EFE22FA7D1EF00FC046D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFDD2FA7D1EF00FC046D /* Models */,
+				58C7EFE12FA7D1EF00FC046D /* Services */,
+			);
+			name = Domain;
+			path = Rei/Domain;
+			sourceTree = "<group>";
+		};
+		58C7EFE52FA7D1EF00FC046D /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFE32FA7D1EF00FC046D /* InputHandler.swift */,
+				58C7EFE42FA7D1EF00FC046D /* RenderProtocols.swift */,
+			);
+			name = Platform;
+			path = Rei/Platform;
+			sourceTree = "<group>";
+		};
+		58C7EFE72FA7D1EF00FC046D /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFE62FA7D1EF00FC046D /* MetalRendererCore.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		58C7EFEB2FA7D1EF00FC046D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFE82FA7D1EF00FC046D /* CustomMTKView.swift */,
+				58C7EFE92FA7D1EF00FC046D /* MainView.swift */,
+				58C7EFEA2FA7D1EF00FC046D /* ReiAppRefactored.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58C7EFED2FA7D1EF00FC046D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				58C7EFE72FA7D1EF00FC046D /* Rendering */,
+				58C7EFEB2FA7D1EF00FC046D /* View */,
+				58C7EFEC2FA7D1EF00FC046D /* SceneController.swift */,
+			);
+			name = Presentation;
+			path = Rei/Presentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		580B71D92FA3A8D6007CC751 /* Rei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B71FF2FA3A8D9007CC751 /* Build configuration list for PBXNativeTarget "Rei" */;
+			buildPhases = (
+				580B71D62FA3A8D6007CC751 /* Sources */,
+				580B71D72FA3A8D6007CC751 /* Frameworks */,
+				580B71D82FA3A8D6007CC751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rei;
+			productName = Rei;
+			productReference = 580B71DA2FA3A8D6007CC751 /* Rei.app */;
+			productType = "com.apple.product-type.application";
+		};
+		580B71EA2FA3A8D9007CC751 /* ReiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B72022FA3A8D9007CC751 /* Build configuration list for PBXNativeTarget "ReiTests" */;
+			buildPhases = (
+				580B71E72FA3A8D9007CC751 /* Sources */,
+				580B71E82FA3A8D9007CC751 /* Frameworks */,
+				580B71E92FA3A8D9007CC751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580B71ED2FA3A8D9007CC751 /* PBXTargetDependency */,
+			);
+			name = ReiTests;
+			productName = ReiTests;
+			productReference = 580B71EB2FA3A8D9007CC751 /* ReiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		580B71F42FA3A8D9007CC751 /* ReiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B72052FA3A8D9007CC751 /* Build configuration list for PBXNativeTarget "ReiUITests" */;
+			buildPhases = (
+				580B71F12FA3A8D9007CC751 /* Sources */,
+				580B71F22FA3A8D9007CC751 /* Frameworks */,
+				580B71F32FA3A8D9007CC751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580B71F72FA3A8D9007CC751 /* PBXTargetDependency */,
+			);
+			name = ReiUITests;
+			productName = ReiUITests;
+			productReference = 580B71F52FA3A8D9007CC751 /* ReiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		580B71D22FA3A8D6007CC751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					580B71D92FA3A8D6007CC751 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					580B71EA2FA3A8D9007CC751 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 580B71D92FA3A8D6007CC751;
+					};
+					580B71F42FA3A8D9007CC751 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 580B71D92FA3A8D6007CC751;
+					};
+				};
+			};
+			buildConfigurationList = 580B71D52FA3A8D6007CC751 /* Build configuration list for PBXProject "Rei" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 580B71D12FA3A8D6007CC751;
+			productRefGroup = 580B71DB2FA3A8D6007CC751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				580B71D92FA3A8D6007CC751 /* Rei */,
+				580B71EA2FA3A8D9007CC751 /* ReiTests */,
+				580B71F42FA3A8D9007CC751 /* ReiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		580B71D82FA3A8D6007CC751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B71E62FA3A8D8007CC751 /* Preview Assets.xcassets in Resources */,
+				580B71E22FA3A8D8007CC751 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B71E92FA3A8D9007CC751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B71F32FA3A8D9007CC751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		580B71D62FA3A8D6007CC751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C7EFF62FA7D1EF00FC046D /* RenderProtocols.swift in Sources */,
+				58C7EFF92FA7D1EF00FC046D /* MainView.swift in Sources */,
+				58C7EFFD2FA7D56C00FC046D /* MatrixHelper.swift in Sources */,
+				58C7EFFB2FA7D1EF00FC046D /* SceneController.swift in Sources */,
+				58C7EFEF2FA7D1EF00FC046D /* SVO.swift in Sources */,
+				580B72192FA3D324007CC751 /* Shaders.metal in Sources */,
+				58C7EFF22FA7D1EF00FC046D /* CameraController.swift in Sources */,
+				58C7EFF12FA7D1EF00FC046D /* Voxel.swift in Sources */,
+				589466F52FA51BE10026D743 /* PerlinNoise.swift in Sources */,
+				58C7EFF42FA7D1EF00FC046D /* VoxelScene.swift in Sources */,
+				58C7EFF82FA7D1EF00FC046D /* CustomMTKView.swift in Sources */,
+				58C7EFF32FA7D1EF00FC046D /* TerrainGenerator.swift in Sources */,
+				58C7EFF02FA7D1EF00FC046D /* Vector3.swift in Sources */,
+				58C7EFF72FA7D1EF00FC046D /* MetalRendererCore.swift in Sources */,
+				58C7EFFA2FA7D1EF00FC046D /* ReiAppRefactored.swift in Sources */,
+				58C7EFEE2FA7D1EF00FC046D /* Camera.swift in Sources */,
+				58C7EFF52FA7D1EF00FC046D /* InputHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B71E72FA3A8D9007CC751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B71F02FA3A8D9007CC751 /* ReiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B71F12FA3A8D9007CC751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B71FA2FA3A8D9007CC751 /* ReiUITests.swift in Sources */,
+				580B71FC2FA3A8D9007CC751 /* ReiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		580B71ED2FA3A8D9007CC751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580B71D92FA3A8D6007CC751 /* Rei */;
+			targetProxy = 580B71EC2FA3A8D9007CC751 /* PBXContainerItemProxy */;
+		};
+		580B71F72FA3A8D9007CC751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580B71D92FA3A8D6007CC751 /* Rei */;
+			targetProxy = 580B71F62FA3A8D9007CC751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		580B71FD2FA3A8D9007CC751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		580B71FE2FA3A8D9007CC751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		580B72002FA3A8D9007CC751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rei/Rei.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rei/Preview Content\"";
+				DEVELOPMENT_TEAM = PV53H4RPF3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Rei";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		580B72012FA3A8D9007CC751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rei/Rei.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rei/Preview Content\"";
+				DEVELOPMENT_TEAM = PV53H4RPF3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Rei";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		580B72032FA3A8D9007CC751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PV53H4RPF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ReiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rei.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rei";
+			};
+			name = Debug;
+		};
+		580B72042FA3A8D9007CC751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PV53H4RPF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ReiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rei.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rei";
+			};
+			name = Release;
+		};
+		580B72062FA3A8D9007CC751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PV53H4RPF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ReiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rei;
+			};
+			name = Debug;
+		};
+		580B72072FA3A8D9007CC751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PV53H4RPF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ReiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rei;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		580B71D52FA3A8D6007CC751 /* Build configuration list for PBXProject "Rei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B71FD2FA3A8D9007CC751 /* Debug */,
+				580B71FE2FA3A8D9007CC751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580B71FF2FA3A8D9007CC751 /* Build configuration list for PBXNativeTarget "Rei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B72002FA3A8D9007CC751 /* Debug */,
+				580B72012FA3A8D9007CC751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580B72022FA3A8D9007CC751 /* Build configuration list for PBXNativeTarget "ReiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B72032FA3A8D9007CC751 /* Debug */,
+				580B72042FA3A8D9007CC751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580B72052FA3A8D9007CC751 /* Build configuration list for PBXNativeTarget "ReiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B72062FA3A8D9007CC751 /* Debug */,
+				580B72072FA3A8D9007CC751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 580B71D22FA3A8D6007CC751 /* Project object */;
+}
